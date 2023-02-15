@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddTransient<IRepositoryHospitales, RepositoryHospitalesSql>();
 builder.Services.AddTransient<IRepositoryHospitales, RepositoryHospitalesOracle>();
 
 var app = builder.Build();
