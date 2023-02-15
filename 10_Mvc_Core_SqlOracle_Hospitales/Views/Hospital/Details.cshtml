@@ -1,0 +1,13 @@
+﻿@model Hospital
+
+<h1>Details Hospital</h1>
+
+<div class="card" style="width: 40%;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nombre</h5>
+        <p class="card-text">Datos de contacto: @Model.Direccion -- @Model.Telefono</p>
+        <a asp-controller="Hospital" asp-action="Index" class="btn btn-danger">Come back</a>
+    </div>
+</div>
+
+
