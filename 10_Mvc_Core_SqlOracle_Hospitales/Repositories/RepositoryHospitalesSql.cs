@@ -38,7 +38,7 @@ namespace _10_Mvc_Core_SqlOracle_Hospitales.Repositories
 
         public RepositoryHospitalesSql()
         {
-            string connectionString = @"Data Source=LOCALHOST\SQLEXPRESS;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=sa;Password=MCSD2022";
+            string connectionString = @"Data Source=LOCALHOST\DESARROLLO;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=sa;Password=MCSD2022";
 
             //Sql
             this.connection = new SqlConnection(connectionString);
